@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1E2A5E;
+
+}
+
+.container h1 {
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+
+
+}
+
+.container {
+  width: 30%;
+  margin: 0 2px 20px rgba(0, 0, 0, 0, 0.5);
+  padding: 50px;
+  border-radius: 50px;
+  color: antiquewhite;
+  background-color: #55679C;
+
+}
+
+#container h1 {
+  text-transform: uppercase;
+  margin-bottom: 5%;
+}
+
+#todo {
+  font-family: montserrat;
+  width: 75%;
+  padding: 15px;
+}
+
+button {
+  background: #7C93C3;
+  border: none;
+  color: white;
+  padding: 13px 18px;
+  font-size: 18px;
+  border-radius: 20%;
+}
+
+.tasks {
+  font-family: 'Courier New', Courier, monospace;
+  margin-bottom: 5px;
+  margin-top: 20px;
+  background-color: white;
+  color: black;
+  list-style: none;
+  padding: 0 15px;
+  line-height: 35px;
+
+}
+
+.tasks input[type="checkbox"] {
+  display: none;
+}
+
+.tasks .delete {
+  color: rgb(250, 106, 106);
+  cursor: pointer;
+  font-size: 30px;
+  margin: 0;
+  float: right;
+}
