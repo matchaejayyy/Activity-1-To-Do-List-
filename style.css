@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Short+Stack&display=swap');
+@import url('https://fonts.cdnfonts.com/css/doodle-unique');
 
 * {
   margin: 0;
@@ -6,62 +8,84 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Rubik Doodle Shadow';
+  font-size: 25px;
+  font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #1E2A5E;
-
-}
-
-.container h1 {
-  text-align: center;
-  font-family: 'Courier New', Courier, monospace;
-
-
+  background-image: url('ponyo.jpg');
+  background-size: cover;
 }
 
 .container {
   width: 30%;
-  margin: 0 2px 20px rgba(0, 0, 0, 0, 0.5);
+  margin: 0 2px 20px rgba(0, 0, 0, 0.5);
   padding: 50px;
   border-radius: 50px;
-  color: antiquewhite;
-  background-color: #55679C;
-
+  color: rgb(20, 3, 3);
+  background-color: rgba(7, 102, 109, 0.449);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-#container h1 {
-  text-transform: uppercase;
+.container h1 {
+  text-align: center;
+  font-family: 'DOODLE UNIQUE', sans-serif;
+  font-weight: 100%;
+  font-size: 300%;
   margin-bottom: 5%;
 }
 
 #todo {
-  font-family: montserrat;
+  font-family: 'Short Stack', cursive;
+  font-weight: bold;
+  background-color: rgba(175, 175, 175, 0.392);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-size: 15px;
   width: 75%;
   padding: 15px;
+  border-radius: 15px;
+  border: none;
+}
+
+#todo::placeholder {
+  font-family: 'Short Stack', cursive;
+  font-weight: bold;
+  color: #000102;
 }
 
 button {
   background: #7C93C3;
   border: none;
-  color: white;
+  margin-left: 12px;
+  color: rgb(7, 136, 4);
+  background-color: rgba(170, 236, 241, 0.7);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   padding: 13px 18px;
   font-size: 18px;
   border-radius: 20%;
+  font-family: 'Rubik Doodle Shadow';
+  font-weight: bold;
+  font-size: 15px;
 }
 
 .tasks {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
   margin-bottom: 5px;
   margin-top: 20px;
-  background-color: white;
-  color: black;
+  background-color: rgb(132, 136, 34);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  color: white;
   list-style: none;
   padding: 0 15px;
   line-height: 35px;
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .tasks input[type="checkbox"] {
@@ -69,9 +93,61 @@ button {
 }
 
 .tasks .delete {
-  color: rgb(250, 106, 106);
+  color:  rgb(179, 58, 58);
   cursor: pointer;
   font-size: 30px;
   margin: 0;
   float: right;
 }
+
+.Calendar {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+#Date {
+  font-family: 'Rubik Doodle Shadow';
+  font-weight: bold;
+  font-size: 15px;
+  color: #010101;
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgba(175, 175, 175, 0.392);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#Time {
+  font-family: 'Rubik Doodle Shadow';
+  font-weight: bold;
+  font-size: 15px;
+  color: #010101;
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgba(175, 175, 175, 0.392);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#sortbtn {
+  font-family: 'Rubik Doodle Shadow';
+  font-weight: bold;
+  font-size: 15px;
+  color: #010101;
+  border-radius: 15px;
+  background-color: rgba(175, 175, 175, 0.392);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.expired {
+  color: rgb(179, 58, 58);
+  font-weight: bold;
+}
+
+.tasks .due-date {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+
+

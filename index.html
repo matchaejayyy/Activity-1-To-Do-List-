@@ -6,14 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title heading>To-do List</title>
   <link rel="stylesheet" href="style.css">
-</head>
+  <link href='https://fonts.googleapis.com/css?family=Rubik Doodle Shadow' rel='stylesheet'>
 
+</head>
 <body>
   <div class="container">
     <h1>To-do List</h1>
     <form id="task">
       <input type="text" id="todo" placeholder="Add New task">
       <button type="submit"> Add </button>
+      <div class="Calendar">
+        <input type="date" id="Date" placeholder="Due Date">
+        <input type="time" id="Time" placeholder="Due Time">
+        <select id="sortbtn">
+          <option value="latest">Latest</option>
+          <option value="oldest">Oldest</option>
+      </select>
+      </div>
+    
+      
     </form>
     <ul id="tasks"></ul>
 
